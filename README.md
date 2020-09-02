@@ -6,12 +6,12 @@ Code for generating cargo boxes.
 
 ## Honda Grom OneWheel Box
 
-![](https://raw.githubusercontent.com/AaronVerDow/Cargo_Box/master/pics/motorcycle.gif)
+![](https://raw.githubusercontent.com/AaronVerDow/Cargo_Box/master/pics/motorcycle.jpg)
 
-![](https://raw.githubusercontent.com/AaronVerDow/Cargo_Box/master/pics/onewheel.gif)
+![](https://raw.githubusercontent.com/AaronVerDow/Cargo_Box/master/pics/onewheel.jpg)
 
 ## RadRunner Corgi Box
 
-![](https://raw.githubusercontent.com/AaronVerDow/Cargo_Box/master/pics/corgi.gif)
+![](https://raw.githubusercontent.com/AaronVerDow/Cargo_Box/master/pics/corgi.jpg)
 
-![](https://raw.githubusercontent.com/AaronVerDow/Cargo_Box/master/pics/bicycle.gif)
+![](https://raw.githubusercontent.com/AaronVerDow/Cargo_Box/master/pics/bicycle.jpg)
