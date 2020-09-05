@@ -1,4 +1,5 @@
 # Instructions for new users
+
 * Download the scad files and keep them in the same directory.  
   * joints.scad is a library that creates the pins for connecting parts
   * functions.scad contains the meat of the code
@@ -16,6 +17,17 @@
   * Try to drag the drawings in your CAM program.  Some will support this.
   * Open the DXF or SVG in Inkscape
   * Post a copy of variables.scad on the Maslow forums.  I *might* be able to post a fixed cutsheet module.  
+
+# Instructions for advanced users
+
+This method is best for creating many different boxes with a consistent look.
+
+* Open src/functions.scad and src/variables.scad for reference
+  * Only change things in these files that belong to all boxes
+* Create a new file (preferably in builds/) and include variables.scad
+  * Only add what's necessary to these files
+* If starting with one of my builds the RENDER and PREVIEW comments are for my post processor:
+  * https://github.com/AaronVerDow/openscad-post-processor
 
 # Variables
 
