@@ -126,9 +126,12 @@ module back_cutsheet(display="") {
 }
 
 module base_drill() {
-    for(y=bolts_overhang)
-    translate([0,y-box_x/2])
-    bolt_plate();
+    intersection () {
+        for(y=bolts_overhang)
+        translate([0,y-box_y/2])
+        bolt_plate();
+        square([box_x-wood*4,box_y-wood*4],center=true);
+    }
 }
 
 module base_outside() {
@@ -172,6 +175,11 @@ module side_outside() {
         translate([wood,0])
         mirror([1,0,0])
         negative_pins(box_z+skirt,wood+pad,2,pintail_gap,joint_holes,ear,ear_extra);
+
+        translate([-box_y/2,-box_z/2+skirt/2+1])
+        mirror([0,1])
+        negative_slot(pintail_gap+1,wood,ear,ear_extra);
+
 
         if(onewheel)
         translate([onewheel_offset-onewheel_y/2,skirt/2-box_z/2+wood+wall])
@@ -310,7 +318,7 @@ module pattern() {
 }
 
 module bolt_plate() {
-    for(i=[0:1:2])
+    for(i=[0:1:len(bolts_x)-1])
     dirror_x()
     translate([bolts_x[i]/2,bolts_y[i]])
     circle(d=bolt);
